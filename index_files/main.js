@@ -456,8 +456,8 @@ const mainInit = () => {
   }
 
   questionsInit();
-  // ratingInit();
-  // reviewsInit();
+  ratingInit();
+  reviewsInit();
   // notificationsInit();
 };
 
