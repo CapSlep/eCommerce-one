@@ -1,5 +1,5 @@
 :root {
-	--main-color: #ffc636;
+	--main-color: #54a40d;
 	--button-text-color: #fff;
 	--max-images-mobile-h: 500px;
 }
@@ -1338,11 +1338,11 @@ body {
 	line-height: 1.125rem;
 	font-weight: 400;
 	/* color: var(--button-text-color); */
-	color: #000;
-	background: linear-gradient(to bottom, #ffd774, #ffc636);
-	border: 1px solid #e58e26;
+	color: #fff;
+	background-color: #54a40d;
+	/* border: 1px solid #e58e26;
 	border-radius: 5px;
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); */
 	/* background-color: var(--main-color); */
 	text-transform: uppercase;
 }
@@ -2513,8 +2513,8 @@ body {
 @media (pointer: fine) {
 	button:hover,
 	.modal__button-ok:hover {
-		background-color: #ffcf57;
-		color: #27251f;
+		background-color: #68b327;
+		color: #fff;
 		-webkit-transition: 1s;
 		-o-transition: 1s;
 		transition: 1s;
@@ -2524,8 +2524,8 @@ body {
 @media (pointer: coarse) {
 	button:active,
 	.modal__button-ok:active {
-		background-color: #ffcf57;
-		color: #27251f;
+		background-color: #68b327;
+		color: #fff;
 		-webkit-transition: 1s;
 		-o-transition: 1s;
 		transition: 1s;
@@ -2690,6 +2690,7 @@ hr {
 
 .faq-text {
 	text-transform: uppercase;
+	text-align: center;
 	font-size: 2.247rem;
 	font-weight: 200;
 	letter-spacing: 0.04em;
@@ -3724,12 +3725,15 @@ header {
 }
 
 .logo {
-	max-width: 200px;
-	margin: 15px auto 10px;
+	text-align: center;
+	width: 100%;
+	background-color: #001744;
 }
 
 .logo-icon {
 	width: 100%;
+	max-width: 300px;
+	margin: 20px auto;
 }
 
 .bottom-row {
@@ -3744,7 +3748,7 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: #232f3e;
+	background-color: #00afd8;
 	height: 46.5px;
 	color: #fff;
 	font-size: 20px;

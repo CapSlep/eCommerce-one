@@ -50,11 +50,12 @@ const checkoutInit = () => {
   const checkoutTotalTotalTitle = document.querySelector("#checkoutTotalTotalTitle");
   const checkoutTotalTotalAmount = document.querySelector("#checkoutTotalTotalAmount");
   const submitButton = document.querySelector("#submitButton");
-    
+
   const pr = lsGetSelectedProduct();
 
   checkoutCurrentPhoto.src = pr.images?.[0];
-  checkoutOfferName.innerText = `${cfg.mainProduct.name}: ${pr.name}`;
+  // checkoutOfferName.innerText = `${cfg.mainProduct.name}: ${pr.name}`;
+  checkoutOfferName.innerText = `${cfg.mainProduct.name}`;
   if (cfg.sizes.enabled) {
     checkoutOfferSize.innerText = `${cart.main.size}: ${lsGetSelectedSize()}`;
   } else {

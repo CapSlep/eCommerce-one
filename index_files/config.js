@@ -8,13 +8,13 @@ const landingUrl = baseHref + window.location.pathname;
 const imageBase = (baseUrl ?? landingUrl).replace(/\/index\.html$/, '');
 
 (function (exp) {
-  const countryCode = "fr";
-  const lang = "fr-FR";
+  const countryCode = "cz";
+  const lang = "cs-CZ";
   const locale = lang;
 
   const sizes = {
     enabled: false,
-    selectText: "TAILLE : ",
+    selectText: "VELIKOST: ",
     arr: [
       "EU 36",
       "EU 37",
@@ -49,80 +49,75 @@ const imageBase = (baseUrl ?? landingUrl).replace(/\/index\.html$/, '');
 
   const bottomRow = {
     bar: "menu",
-    account: "Se connecter",
-    heart: "Liste de souhaits",
-    bag: "Panier",
-    find: "Chercher"
+    account: "Přihlásit se",
+    heart: "Seznam přání",
+    bag: "Košík",
+    find: "Hledat"
   };
 
   const mainProduct = {
-    header: "Offre limitée",
-    name: "Tondeuse à gazon sans fil EGO 21in Autopropulsée",
-    oldPrice: "400,00 €",
-    newPrice: "1,95 €",
-    selectText: "COULEUR : ",
-    text: `Si vous cherchez un moyen de tondre votre pelouse avec moins de désordre, une empreinte carbone réduite et sans fumées à gérer, le kit de tondeuse à gazon autopropulsée sans fil de 21 pouces 56 volts Lithium-Ion avec batterie de 7,5 Ah et chargeur inclus est la solution idéale. Avec tout le couple d'un moteur à essence standard, cette tondeuse autopropulsée facilite le travail dans les conditions de tonte les plus difficiles.
+    header: "Omezená nabídka",
+    name: "Akumulátorová sekačka EGO 21in s vlastním pohonem",
+    oldPrice: "Kč 8000",
+    newPrice: "Kč 49",
+    selectText: "BARVA: ",
+    text: `Pokud hledáte způsob, jak sekat trávník s menším nepořádkem, menší uhlíkovou stopou a bez výfukových plynů, sada akumulátorové sekačky na trávu s vlastním pohonem o rozměrech 21 palců a 56 V lithium-iontovou baterií s kapacitou 7,5 Ah a nabíječkou je ideálním řešením. S veškerým točivým momentem standardního benzinového motoru tato sekačka s vlastním pohonem usnadňuje práci v nejnáročnějších podmínkách sekání.
   `,
   };
 
   const notifications = [
     {
       user: "Manuel S*****",
-      location: "Barcelone, Espagne",
-      action: "Je viens de recevoir mes sabots pour 1,95 euros !",
-      timeago: "il y a 15 secondes",
+      location: "Barcelona, Španělsko",
+      action: "Právě jsem dostal své dřeváky za 1,95 eur!",
+      timeago: "před 15 sekundami",
     },
     {
       user: "Carlos B******",
-      location: "Madrid, Espagne",
-      action: "Je viens de recevoir mes sabots pour 1,95 euros !",
-      timeago: "il y a 25 secondes",
+      location: "Madrid, Španělsko",
+      action: "Právě jsem dostal své dřeváky za 1,95 eur!",
+      timeago: "před 25 sekundami",
     },
   ];
 
   const reviewsArr = [
     {
       name: "Matthieu",
-      time: "Il y a un jour",
-      header: "C'est incroyable !",
-      product: "26468781",
-      review: "J'ai longtemps rêvé d'acheter une nouvelle tondeuse à gazon, car l'ancienne est tombée en panne. Merci Amazon pour la vente !",
+      time: "Před jedním dnem",
+      header: "Je to neuvěřitelné!",
+      review: "Dlouho jsem snil o koupi nové sekačky na trávu, protože ta stará se rozbila. Děkuji DATART za výprodej!",
       image: "./index_files/review1.jpg",
       rating: 100,
     },
     {
       name: "Lucas",
-      time: "Il y a deux jours",
-      header: "Génial ! Je n'ai pas de mots.",
-      product: "26468783",
-      review: "J'ai reçu ma tondeuse à gazon EGO, elle est encore plus belle que sur la photo !",
+      time: "Před dvěma dny",
+      header: "Skvělé! Nemám slova.",
+      review: "Dostal jsem svou sekačku EGO, vypadá ještě lépe než na fotografii!",
       image: "./index_files/review5.jpg",
       rating: 100,
     },
     {
       name: "Valentina",
-      time: "Il y a deux jours",
-      header: "Tout simplement génial.",
-      product: "26468782",
-      review: "Mon mari était contre ma participation, car nous n'avions rien entendu de cette vente, mais quand j'ai reçu le colis, il était très heureux.",
+      time: "Před dvěma dny",
+      header: "Jednoduše skvělé.",
+      review: "Můj manžel byl proti mé účasti, protože jsme o tomto výprodeji nic neslyšeli, ale když jsem dostala balíček, byl velmi šťastný.",
       image: "./index_files/review2.jpg",
       rating: 93,
     },
     {
       name: "Santiago",
-      time: "Il y a quatre jours",
-      header: "J'aime",
-      product: "26468782",
-      review: "Regardez simplement ma pelouse, elle est magnifique. Merci à EGO et Amazon pour ce cadeau.",
+      time: "Před čtyřmi dny",
+      header: "Líbí se mi",
+      review: "Jen se podívejte na můj trávník, je nádherný. Děkuji EGO a DATART za tento dárek.",
       image: "./index_files/review4.jpg",
       rating: 90,
     },
     {
       name: "Martina",
-      time: "Il y a sept jours",
-      header: "Wow, j'adore ce produit !",
-      product: "26468783",
-      review: "C'est la meilleure tondeuse à gazon que j'ai jamais achetée, très bonne qualité et d'après les avis, elle est durable. Merci pour cette vente.",
+      time: "Před sedmi dny",
+      header: "Wow, miluji tento produkt!",
+      review: "To je nejlepší sekačka, kterou jsem kdy koupila, velmi dobrá kvalita a podle recenzí je trvanlivá. Děkuji za tento výprodej.",
       image: "./index_files/review3.jpg",
       rating: 80,
     },
@@ -130,83 +125,83 @@ const imageBase = (baseUrl ?? landingUrl).replace(/\/index\.html$/, '');
 
   const reviews = {
     reviews: reviewsArr,
-    rr: "AVIS ET COMMENTAIRES",
+    rr: "RECENZE A HODNOCENÍ",
     percent: "99%",
-    rec: "Commentaires sur cette promotion",
+    rec: "Komentáře k této akci",
   };
 
   const questions = {
-    _of: "Question {1} sur {2} : ",
+    _of: "Otázka {1} z {2}: ",
     arr: [
       {
-        q: "Avez-vous fait des achats sur Amazon ?",
+        q: "Nakupovali jste na DATART?",
         a: [
-          "Oui, je l'ai acheté",
-          "Non, jamais acheté",
+          "Ano, koupil jsem to",
+          "Ne, nikdy jsem nekoupil",
         ],
       },
       {
-        q: "Comment avez-vous entendu parler de l’offre ?",
-        a: ["Sur le site officiel", "Publicité Facebook", "Des amis ont dit"],
+        q: "Jak jste se dozvěděli o této nabídce?",
+        a: ["Na oficiálních stránkách", "Reklama na Facebooku", "Řekli přátelé"],
       },
       {
-        q: "Pourquoi acheter une tondeuse à gazon ?",
-        a: ["Pour usage personnel", "Pour un cadeau"],
+        q: "Proč kupovat sekačku na trávu?",
+        a: ["Pro osobní použití", "Pro dárek"],
       },
     ],
   };
 
   const check = {
-    title: "Votre réponse sera vérifiée...",
+    title: "Vaše odpověď bude ověřena...",
     arr: [
-      "Vous avez répondu à la question 3/3.",
-      "Votre adresse IP ne permet pas de tirer des conclusions sur les demandes précédentes.",
-      "Votre réponse a été vérifiée.",
+      "Odpověděli jste na otázku 3/3.",
+      "Vaše IP adresa neumožňuje vyvodit závěry o předchozích žádostech.",
+      "Vaše odpověď byla ověřena.",
     ],
   };
 
   const modals = {
     welcome: {
       texts: {
-        header: "Félicitations, vous avez confirmé que vous êtes une personne réelle",
+        header: "Gratulujeme, potvrdili jste, že jste skutečná osoba",
         button: "OK",
         text: `
       <center>
-      Aujourd'hui, {date}, vous avez l'opportunité d'acheter une paire de chaussures Nike Air Force 1'07 à un prix spécial
+      Dnes, {date}, máte možnost koupit si pár bot Nike Air Force 1'07 za speciální cenu
         <br><br>
-        Tout ce que vous devez faire, c'est choisir la bonne boîte cadeau.
+        Vše, co musíte udělat, je vybrat správnou dárkovou krabičku.
         <br><br>
-        Vous avez 3 essais, bonne chance !
+        Máte 3 pokusy, hodně štěstí!
       </center>
       `,
       },
     },
     first: {
       texts: {
-        header: "Oh non...",
+        header: "Ach ne...",
         button: "OK",
         text: `
       <center>
-      Malheureusement, ce cadeau est vide ! Il vous reste encore 2 essais - bonne chance !
+      Bohužel je tento dárek prázdný! Zbývají vám ještě 2 pokusy - hodně štěstí!
       </center>
       `,
       },
     },
     win: {
       texts: {
-        header: "Félicitations ! Vous avez gagné !",
+        header: "Gratulujeme! Vyhráli jste!",
         button: "OK",
         text: `
       <center>
         <p style="color: #000">
-        Vous avez gagné une paire de chaussures "Nike Air Force 1'07"
+        Vyhráli jste pár bot "Nike Air Force 1'07"
         </p>
         <br>
-        1) Cliquez sur "OK" pour aller à la page de livraison.
+        1) Klikněte na "OK" a přejděte na stránku doručení.
         <br><br>
-        2) Remplissez le formulaire et payez la commande en utilisant votre remise personnelle.
+        2) Vyplňte formulář a zaplaťte objednávku se svou osobní slevou.
         <br><br>
-        3) Le colis sera livré en 2-3 jours.
+        3) Balíček bude doručen za 2-3 dny.
       </center>
       `,
       },
@@ -215,71 +210,72 @@ const imageBase = (baseUrl ?? landingUrl).replace(/\/index\.html$/, '');
 
   const cartSteps = {
     personal: {
-      title: "Informations personnelles",
+      title: "Osobní údaje",
       fields: {
         name: {
           enabled: true,
-          field: "Prénom",
+          field: "Jméno",
         },
         family: {
           enabled: true,
-          field: "Nom",
+          field: "Příjmení",
         },
         phone: {
           enabled: true,
-          field: "Numéro de téléphone",
+          field: "Telefonní číslo",
         },
         email: {
           enabled: true,
-          field: "Adresse e-mail",
+          field: "E-mailová adresa",
         },
       },
     },
     delivery: {
-      title: "Livraison",
+      title: "Doručení",
       fields: {
         city: {
           enabled: true,
-          field: "Ville",
+          field: "Město",
         },
         address: {
           enabled: true,
-          field: "Adresse de livraison",
+          field: "Doručovací adresa",
         },
         zip: {
           enabled: true,
-          field: "Code postal",
+          field: "PSČ",
         },
       },
     },
     payment: {
-      title: "Méthodes de paiement",
-      creditCard: "Paiement en ligne par carte de crédit",
+      title: "Platební metody",
+      creditCard: "Online platba kreditní kartou",
     },
   };
 
   const cart = {
     steps: cartSteps,
     main: {
-      title: "Détails de la commande",
-      oldPrice: "400,00 €",
-      newPrice: "1,95 €",
-      size: "Taille",
+      title: "Detaily objednávky",
+      oldPrice: "Kč 8000",
+      newPrice: "Kč 49",
+      size: "Velikost",
       subTotal: {
-        title: "Sous-total",
-        amount: "1,95 €",
+        title: "Mezisoučet",
+        amount: "Kč 49",
       },
       delivery: {
-        title: "Livraison",
-        amount: "0,00 €",
+        title: "Doručení",
+        amount: "Kč 0.00",
       },
       total: {
-        title: "Total",
-        amount: "1,95 €",
+        title: "Celkem",
+        amount: "Kč 49",
       },
-      checkoutButton: "Payer votre commande",
+      checkoutButton: "Zaplaťte objednávku",
     },
   };
+
 
   const products = [
     {
