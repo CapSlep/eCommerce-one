@@ -8,13 +8,13 @@ const landingUrl = baseHref + window.location.pathname;
 const imageBase = (baseUrl ?? landingUrl).replace(/\/index\.html$/, '');
 
 (function (exp) {
-  const countryCode = "cz";
-  const lang = "cs-CZ";
+  const countryCode = "hu";
+  const lang = "hu-HU";
   const locale = lang;
 
   const sizes = {
     enabled: false,
-    selectText: "VELIKOST: ",
+    selectText: "MÉRET: ",
     arr: [
       "EU 36",
       "EU 37",
@@ -48,76 +48,76 @@ const imageBase = (baseUrl ?? landingUrl).replace(/\/index\.html$/, '');
   };
 
   const bottomRow = {
-    bar: "menu",
-    account: "Přihlásit se",
-    heart: "Seznam přání",
-    bag: "Košík",
-    find: "Hledat"
+    bar: "menü",
+    account: "Bejelentkezés",
+    heart: "Kívánságlista",
+    bag: "Kosár",
+    find: "Keresés"
   };
 
   const mainProduct = {
-    header: "Omezená nabídka",
-    name: "Akumulátorová sekačka EGO 21in s vlastním pohonem",
-    oldPrice: "Kč 8000",
-    newPrice: "Kč 49",
-    selectText: "BARVA: ",
-    text: `Pokud hledáte způsob, jak sekat trávník s menším nepořádkem, menší uhlíkovou stopou a bez výfukových plynů, sada akumulátorové sekačky na trávu s vlastním pohonem o rozměrech 21 palců a 56 V lithium-iontovou baterií s kapacitou 7,5 Ah a nabíječkou je ideálním řešením. S veškerým točivým momentem standardního benzinového motoru tato sekačka s vlastním pohonem usnadňuje práci v nejnáročnějších podmínkách sekání.
-  `,
+    header: "Korlátozott ajánlat",
+    name: "EGO 21in önjáró akkumulátoros fűnyíró",
+    oldPrice: "123000 Ft",
+    newPrice: "763 Ft",
+    selectText: "SZÍN: ",
+    text: `Ha módot keres arra, hogy kisebb rendetlenséggel, kisebb szénlábnyommal és kipufogógázok nélkül nyírja a gyepet, az EGO 21 hüvelykes, 56 V-os lítium-ion akkumulátoros, 7,5 Ah-s és töltővel ellátott önjáró fűnyíró szett ideális megoldás. Az összes nyomatékkal, amit egy hagyományos benzines motor kínál, ez az önjáró fűnyíró megkönnyíti a munkát a legkeményebb fűnyírási körülmények között.
+`,
   };
 
   const notifications = [
     {
       user: "Manuel S*****",
-      location: "Barcelona, Španělsko",
-      action: "Právě jsem dostal své dřeváky za 1,95 eur!",
-      timeago: "před 15 sekundami",
+      location: "Barcelona, Spanyolország",
+      action: "Most kaptam meg a fapapucsomat 1,95 euróért!",
+      timeago: "15 másodperccel ezelőtt",
     },
     {
       user: "Carlos B******",
-      location: "Madrid, Španělsko",
-      action: "Právě jsem dostal své dřeváky za 1,95 eur!",
-      timeago: "před 25 sekundami",
+      location: "Madrid, Spanyolország",
+      action: "Most kaptam meg a fapapucsomat 1,95 euróért!",
+      timeago: "25 másodperccel ezelőtt",
     },
   ];
 
   const reviewsArr = [
     {
       name: "Matthieu",
-      time: "Před jedním dnem",
-      header: "Je to neuvěřitelné!",
-      review: "Dlouho jsem snil o koupi nové sekačky na trávu, protože ta stará se rozbila. Děkuji DATART za výprodej!",
+      time: "Egy nappal ezelőtt",
+      header: "Ez hihetetlen!",
+      review: "Régóta álmodtam egy új fűnyíró vásárlásáról, mert a régi elromlott. Köszönöm Euronics az akciót!",
       image: "./index_files/review1.jpg",
       rating: 100,
     },
     {
       name: "Lucas",
-      time: "Před dvěma dny",
-      header: "Skvělé! Nemám slova.",
-      review: "Dostal jsem svou sekačku EGO, vypadá ještě lépe než na fotografii!",
+      time: "Két nappal ezelőtt",
+      header: "Nagyszerű! Nincs szavam.",
+      review: "Megkaptam az EGO fűnyírómat, még jobban néz ki, mint a képen!",
       image: "./index_files/review5.jpg",
       rating: 100,
     },
     {
       name: "Valentina",
-      time: "Před dvěma dny",
-      header: "Jednoduše skvělé.",
-      review: "Můj manžel byl proti mé účasti, protože jsme o tomto výprodeji nic neslyšeli, ale když jsem dostala balíček, byl velmi šťastný.",
+      time: "Két nappal ezelőtt",
+      header: "Egyszerűen nagyszerű.",
+      review: "A férjem ellenezte a részvételemet, mert nem hallottunk erről az akcióról, de amikor megkaptam a csomagot, nagyon boldog volt.",
       image: "./index_files/review2.jpg",
       rating: 93,
     },
     {
       name: "Santiago",
-      time: "Před čtyřmi dny",
-      header: "Líbí se mi",
-      review: "Jen se podívejte na můj trávník, je nádherný. Děkuji EGO a DATART za tento dárek.",
+      time: "Négy nappal ezelőtt",
+      header: "Tetszik",
+      review: "Csak nézd meg a gyepemet, gyönyörű. Köszönöm EGO és Euronics ezt az ajándékot.",
       image: "./index_files/review4.jpg",
       rating: 90,
     },
     {
       name: "Martina",
-      time: "Před sedmi dny",
-      header: "Wow, miluji tento produkt!",
-      review: "To je nejlepší sekačka, kterou jsem kdy koupila, velmi dobrá kvalita a podle recenzí je trvanlivá. Děkuji za tento výprodej.",
+      time: "Hét nappal ezelőtt",
+      header: "Wow, imádom ezt a terméket!",
+      review: "Ez a legjobb fűnyíró, amit valaha vettem, nagyon jó minőségű és az értékelések szerint tartós. Köszönöm ezt az akciót.",
       image: "./index_files/review3.jpg",
       rating: 80,
     },
@@ -125,83 +125,83 @@ const imageBase = (baseUrl ?? landingUrl).replace(/\/index\.html$/, '');
 
   const reviews = {
     reviews: reviewsArr,
-    rr: "RECENZE A HODNOCENÍ",
+    rr: "VÉLEMÉNYEK ÉS ÉRTÉKELÉSEK",
     percent: "99%",
-    rec: "Komentáře k této akci",
+    rec: "Megjegyzések ehhez az akcióhoz",
   };
 
   const questions = {
-    _of: "Otázka {1} z {2}: ",
+    _of: "Kérdés {1} a {2}-ból: ",
     arr: [
       {
-        q: "Nakupovali jste na DATART?",
+        q: "Vásárolt már a Euronics-nál?",
         a: [
-          "Ano, koupil jsem to",
-          "Ne, nikdy jsem nekoupil",
+          "Igen, vásároltam",
+          "Nem, soha nem vásároltam",
         ],
       },
       {
-        q: "Jak jste se dozvěděli o této nabídce?",
-        a: ["Na oficiálních stránkách", "Reklama na Facebooku", "Řekli přátelé"],
+        q: "Honnan értesült erről az ajánlatról?",
+        a: ["A hivatalos weboldalon", "Reklám a Facebookon", "Barátok mondták"],
       },
       {
-        q: "Proč kupovat sekačku na trávu?",
-        a: ["Pro osobní použití", "Pro dárek"],
+        q: "Miért vásárol fűnyírót?",
+        a: ["Személyes használatra", "Ajándékba"],
       },
     ],
   };
 
   const check = {
-    title: "Vaše odpověď bude ověřena...",
+    title: "A válasza ellenőrzésre kerül...",
     arr: [
-      "Odpověděli jste na otázku 3/3.",
-      "Vaše IP adresa neumožňuje vyvodit závěry o předchozích žádostech.",
-      "Vaše odpověď byla ověřena.",
+      "Ön válaszolt a 3/3 kérdésre.",
+      "Az IP-címe nem teszi lehetővé, hogy következtetéseket vonjunk le korábbi kéréseiről.",
+      "A válasza ellenőrzésre került.",
     ],
   };
 
   const modals = {
     welcome: {
       texts: {
-        header: "Gratulujeme, potvrdili jste, že jste skutečná osoba",
+        header: "Gratulálunk, megerősítette, hogy valós személy",
         button: "OK",
         text: `
       <center>
-      Dnes, {date}, máte možnost koupit si pár bot Nike Air Force 1'07 za speciální cenu
+      Ma, {date}, lehetősége van Nike Air Force 1'07 párt vásárolni speciális áron
         <br><br>
-        Vše, co musíte udělat, je vybrat správnou dárkovou krabičku.
+        Minden, amit tennie kell, az a megfelelő ajándékdoboz kiválasztása.
         <br><br>
-        Máte 3 pokusy, hodně štěstí!
+        Három próbálkozása van, sok szerencsét!
       </center>
       `,
       },
     },
     first: {
       texts: {
-        header: "Ach ne...",
+        header: "Ó, ne...",
         button: "OK",
         text: `
       <center>
-      Bohužel je tento dárek prázdný! Zbývají vám ještě 2 pokusy - hodně štěstí!
+      Sajnos ez az ajándék üres! Még 2 próbálkozása van - sok szerencsét!
       </center>
       `,
       },
     },
     win: {
       texts: {
-        header: "Gratulujeme! Vyhráli jste!",
+        header: "Gratulálunk! Nyertél!",
         button: "OK",
         text: `
       <center>
         <p style="color: #000">
-        Vyhráli jste pár bot "Nike Air Force 1'07"
+        Ön nyert egy pár "Nike Air Force 1'07" cipőt
         </p>
         <br>
-        1) Klikněte na "OK" a přejděte na stránku doručení.
+        1) Kattintson az "OK" gombra, és lépjen a szállítási oldalra.
         <br><br>
-        2) Vyplňte formulář a zaplaťte objednávku se svou osobní slevou.
+        2) Töltse ki az űrlapot, és fizesse ki a megrendelést a személyes kedvezményével.
         <br><br>
-        3) Balíček bude doručen za 2-3 dny.
+        3) A csomag 2-3 napon belül megérkezik.
       </center>
       `,
       },
@@ -210,71 +210,72 @@ const imageBase = (baseUrl ?? landingUrl).replace(/\/index\.html$/, '');
 
   const cartSteps = {
     personal: {
-      title: "Osobní údaje",
+      title: "Személyes adatok",
       fields: {
         name: {
           enabled: true,
-          field: "Jméno",
+          field: "Név",
         },
         family: {
           enabled: true,
-          field: "Příjmení",
+          field: "Vezetéknév",
         },
         phone: {
           enabled: true,
-          field: "Telefonní číslo",
+          field: "Telefonszám",
         },
         email: {
           enabled: true,
-          field: "E-mailová adresa",
+          field: "Email cím",
         },
       },
     },
     delivery: {
-      title: "Doručení",
+      title: "Szállítás",
       fields: {
         city: {
           enabled: true,
-          field: "Město",
+          field: "Város",
         },
         address: {
           enabled: true,
-          field: "Doručovací adresa",
+          field: "Szállítási cím",
         },
         zip: {
           enabled: true,
-          field: "PSČ",
+          field: "Irányítószám",
         },
       },
     },
     payment: {
-      title: "Platební metody",
-      creditCard: "Online platba kreditní kartou",
+      title: "Fizetési módok",
+      creditCard: "Online fizetés hitelkártyával",
     },
   };
 
   const cart = {
     steps: cartSteps,
     main: {
-      title: "Detaily objednávky",
-      oldPrice: "Kč 8000",
-      newPrice: "Kč 49",
-      size: "Velikost",
+      title: "Rendelési részletek",
+      oldPrice: "123000 Ft",
+      newPrice: "763 Ft",
+      size: "Méret",
       subTotal: {
-        title: "Mezisoučet",
-        amount: "Kč 49",
+        title: "Részösszeg",
+        amount: "763 Ft",
       },
       delivery: {
-        title: "Doručení",
-        amount: "Kč 0.00",
+        title: "Szállítás",
+        amount: "Ft 0.00",
       },
       total: {
-        title: "Celkem",
-        amount: "Kč 49",
+        title: "Összesen",
+        amount: "763 Ft",
       },
-      checkoutButton: "Zaplaťte objednávku",
+      checkoutButton: "Rendelés kifizetése",
     },
   };
+
 
 
   const products = [
