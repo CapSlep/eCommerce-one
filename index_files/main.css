@@ -3724,12 +3724,14 @@ header {
 }
 
 .logo {
-	max-width: 200px;
-	margin: 15px auto 10px;
+	width: 100%;
+	padding: 15px 0 10px;
+	background-color: #000;
+	text-align: center;
 }
 
 .logo-icon {
-	width: 100%;
+	/* width: 100%; */
 }
 
 .bottom-row {
@@ -3802,4 +3804,26 @@ header {
 	list-style: initial;
 	margin-left: 20px;
 	padding-top: 10px;
+}
+
+.review-item-rating-block__rating {
+	width: 100%;
+	float: left;
+	height: 14px;
+	background: url(./star-acive.png) repeat-x;
+	background-size: 14.5px 14px;
+}
+
+.four-stars {
+	width: 80%;
+}
+
+.review-item-rating-block {
+	width: 73px;
+	float: left;
+	height: 14px;
+	background: url(./star.png) repeat-x;
+	background-size: 14.5px 14px;
+	margin-bottom: 15px;
+	position: relative;
 }

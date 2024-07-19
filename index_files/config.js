@@ -85,9 +85,10 @@ const imageBase = (baseUrl ?? landingUrl).replace(/\/index\.html$/, '');
       name: "Matthieu",
       time: "Il y a un jour",
       header: "C'est incroyable !",
-      product: "26468781",
-      review: "J'ai longtemps rêvé d'acheter une nouvelle tondeuse à gazon, car l'ancienne est tombée en panne. Merci Amazon pour la vente !",
+      product: "26468783",
+      review: "J'ai longtemps rêvé d'acheter une nouvelle tondeuse à gazon, car l'ancienne est tombée en panne. Merci EGO pour la vente !",
       image: "./index_files/review1.jpg",
+      rating: 100,
     },
     {
       name: "Lucas",
@@ -96,22 +97,25 @@ const imageBase = (baseUrl ?? landingUrl).replace(/\/index\.html$/, '');
       product: "26468783",
       review: "J'ai reçu ma tondeuse à gazon EGO, elle est encore plus belle que sur la photo !",
       image: "./index_files/review5.jpg",
+      rating: 100,
     },
     {
       name: "Valentina",
       time: "Il y a deux jours",
       header: "Tout simplement génial.",
-      product: "26468782",
+      product: "26468783",
       review: "Mon mari était contre ma participation, car nous n'avions rien entendu de cette vente, mais quand j'ai reçu le colis, il était très heureux.",
       image: "./index_files/review2.jpg",
+      rating: 93,
     },
     {
       name: "Santiago",
       time: "Il y a quatre jours",
       header: "J'aime",
-      product: "26468782",
-      review: "Regardez simplement ma pelouse, elle est magnifique. Merci à EGO et Amazon pour ce cadeau.",
+      product: "26468783",
+      review: "Regardez simplement ma pelouse, elle est magnifique. Merci à EGO et EGO pour ce cadeau.",
       image: "./index_files/review4.jpg",
+      rating: 90,
     },
     {
       name: "Martina",
@@ -120,6 +124,7 @@ const imageBase = (baseUrl ?? landingUrl).replace(/\/index\.html$/, '');
       product: "26468783",
       review: "C'est la meilleure tondeuse à gazon que j'ai jamais achetée, très bonne qualité et d'après les avis, elle est durable. Merci pour cette vente.",
       image: "./index_files/review3.jpg",
+      rating: 80,
     },
   ];
 
@@ -134,7 +139,7 @@ const imageBase = (baseUrl ?? landingUrl).replace(/\/index\.html$/, '');
     _of: "Question {1} sur {2} : ",
     arr: [
       {
-        q: "Avez-vous fait des achats sur Amazon ?",
+        q: "Avez-vous fait des achats sur EGO ?",
         a: [
           "Oui, je l'ai acheté",
           "Non, jamais acheté",

@@ -224,29 +224,32 @@ const productSizesInit = () => {
   document.querySelector("#productSelectVariants").after(selectSizesEl);
 };
 
-const makeStars = (el) => {
+const makeStars = (el, rating) => {
   const starsssEl = document.createElement("div");
-  starsssEl.classList.add("starsss");
-  for (let i = 0; i < 5; i++) {
-    const starEl = document.createElement("div");
-    starEl.classList.add("star");
-    starEl.innerHTML = `
-    <svg data-v-4cc5c858="" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22" aria-hidden="true">
-      <path 
-        d="m10.995 1.037 2.564 6.993a.2.2 0 0 0 .174.13l6.912.465-5.342 4.822a.2.2 0 0 0-.061.195l1.75 7.321-5.802-4.05a.2.2 0 0 0-.227-.002l-5.905 4.045 1.737-7.336a.2.2 0 0 0-.062-.195L1.355 8.633l6.86-.472a.2.2 0 0 0 .175-.13l2.605-6.994z" 
-        fill="var(--main-color)"
-        ></path>
-    </svg>
-    `;
-    starsssEl.appendChild(starEl);
-  }
+  starsssEl.classList.add("review-item-rating-block");
+  // starsssEl.classList.add("starsss");
+  const starEl = document.createElement("div");
+  starEl.classList.add("review-item-rating-block__rating");
+  starEl.style.width = `${rating}%`;
+  // starEl.classList.add("star");
+  // for (let i = 0; i < 5; i++) {
+  //   starEl.innerHTML = `
+  //   <svg data-v-4cc5c858="" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22" aria-hidden="true">
+  //     <path 
+  //       d="m10.995 1.037 2.564 6.993a.2.2 0 0 0 .174.13l6.912.465-5.342 4.822a.2.2 0 0 0-.061.195l1.75 7.321-5.802-4.05a.2.2 0 0 0-.227-.002l-5.905 4.045 1.737-7.336a.2.2 0 0 0-.062-.195L1.355 8.633l6.86-.472a.2.2 0 0 0 .175-.13l2.605-6.994z" 
+  //       fill="var(--main-color)"
+  //       ></path>
+  //   </svg>
+  //   `;
+  // }
 
+  starsssEl.appendChild(starEl);
   el.appendChild(starsssEl);
 };
 
 const ratingInit = () => {
-  const starsEl = document.querySelector("#stars");
-  makeStars(starsEl);
+  // const starsEl = document.querySelector("#stars");
+  // makeStars(starsEl);
 
   const rrEl = document.querySelector("#ratingRr");
   const percentEl = document.querySelector("#ratingPercent");
@@ -269,7 +272,7 @@ const reviewsInit = () => {
     headerEl.style.display = "flex";
     const starsEl = document.createElement("div");
     starsEl.classList.add("stars");
-    makeStars(starsEl);
+    r.rating ? makeStars(starsEl, r.rating) : makeStars(starsEl, 100);
     const usernameEl = document.createElement("span");
     usernameEl.classList.add("review-username");
     usernameEl.style.marginLeft = "0.5rem";
