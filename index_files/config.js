@@ -8,13 +8,13 @@ const landingUrl = baseHref + window.location.pathname;
 const imageBase = (baseUrl ?? landingUrl).replace(/\/index\.html$/, '');
 
 (function (exp) {
-  const countryCode = "hu";
-  const lang = "hu-HU";
+  const countryCode = "fr";
+  const lang = "fr-FR";
   const locale = lang;
 
   const sizes = {
     enabled: false,
-    selectText: "MÉRET: ",
+    selectText: "TAILLE : ",
     arr: [
       "EU 36",
       "EU 37",
@@ -48,35 +48,35 @@ const imageBase = (baseUrl ?? landingUrl).replace(/\/index\.html$/, '');
   };
 
   const bottomRow = {
-    bar: "menü",
-    account: "Bejelentkezés",
-    heart: "Kívánságlista",
-    bag: "Kosár",
-    find: "Keresés"
+    bar: "menu",
+    account: "Se connecter",
+    heart: "Liste de souhaits",
+    bag: "Panier",
+    find: "Chercher"
   };
 
   const mainProduct = {
-    header: "Korlátozott ajánlat",
-    name: "EGO 21in önjáró akkumulátoros fűnyíró",
-    oldPrice: "123000 Ft",
-    newPrice: "763 Ft",
-    selectText: "SZÍN: ",
-    text: `Ha módot keres arra, hogy kisebb rendetlenséggel, kisebb szénlábnyommal és kipufogógázok nélkül nyírja a gyepet, az EGO 21 hüvelykes, 56 V-os lítium-ion akkumulátoros, 7,5 Ah-s és töltővel ellátott önjáró fűnyíró szett ideális megoldás. Az összes nyomatékkal, amit egy hagyományos benzines motor kínál, ez az önjáró fűnyíró megkönnyíti a munkát a legkeményebb fűnyírási körülmények között.
-`,
+    header: "Offre limitée",
+    name: "Tondeuse à gazon sans fil EGO 21in Autopropulsée",
+    oldPrice: "400,00 €",
+    newPrice: "1,95 €",
+    selectText: "COULEUR : ",
+    text: `Si vous cherchez un moyen de tondre votre pelouse avec moins de désordre, une empreinte carbone réduite et sans fumées à gérer, le kit de tondeuse à gazon autopropulsée sans fil de 21 pouces 56 volts Lithium-Ion avec batterie de 7,5 Ah et chargeur inclus est la solution idéale. Avec tout le couple d'un moteur à essence standard, cette tondeuse autopropulsée facilite le travail dans les conditions de tonte les plus difficiles.
+  `,
   };
 
   const notifications = [
     {
       user: "Manuel S*****",
-      location: "Barcelona, Spanyolország",
-      action: "Most kaptam meg a fapapucsomat 1,95 euróért!",
-      timeago: "15 másodperccel ezelőtt",
+      location: "Barcelone, Espagne",
+      action: "Je viens de recevoir mes sabots pour 1,95 euros !",
+      timeago: "il y a 15 secondes",
     },
     {
       user: "Carlos B******",
-      location: "Madrid, Spanyolország",
-      action: "Most kaptam meg a fapapucsomat 1,95 euróért!",
-      timeago: "25 másodperccel ezelőtt",
+      location: "Madrid, Espagne",
+      action: "Je viens de recevoir mes sabots pour 1,95 euros !",
+      timeago: "il y a 25 secondes",
     },
   ];
 
@@ -92,9 +92,10 @@ const imageBase = (baseUrl ?? landingUrl).replace(/\/index\.html$/, '');
     },
     {
       name: "Lucas",
-      time: "Két nappal ezelőtt",
-      header: "Nagyszerű! Nincs szavam.",
-      review: "Megkaptam az EGO fűnyírómat, még jobban néz ki, mint a képen!",
+      time: "Il y a deux jours",
+      header: "Génial ! Je n'ai pas de mots.",
+      product: "26468783",
+      review: "J'ai reçu ma tondeuse à gazon EGO, elle est encore plus belle que sur la photo !",
       image: "./index_files/review5.jpg",
       rating: 100,
     },
@@ -118,9 +119,10 @@ const imageBase = (baseUrl ?? landingUrl).replace(/\/index\.html$/, '');
     },
     {
       name: "Martina",
-      time: "Hét nappal ezelőtt",
-      header: "Wow, imádom ezt a terméket!",
-      review: "Ez a legjobb fűnyíró, amit valaha vettem, nagyon jó minőségű és az értékelések szerint tartós. Köszönöm ezt az akciót.",
+      time: "Il y a sept jours",
+      header: "Wow, j'adore ce produit !",
+      product: "26468783",
+      review: "C'est la meilleure tondeuse à gazon que j'ai jamais achetée, très bonne qualité et d'après les avis, elle est durable. Merci pour cette vente.",
       image: "./index_files/review3.jpg",
       rating: 80,
     },
@@ -128,83 +130,83 @@ const imageBase = (baseUrl ?? landingUrl).replace(/\/index\.html$/, '');
 
   const reviews = {
     reviews: reviewsArr,
-    rr: "VÉLEMÉNYEK ÉS ÉRTÉKELÉSEK",
+    rr: "AVIS ET COMMENTAIRES",
     percent: "99%",
-    rec: "Megjegyzések ehhez az akcióhoz",
+    rec: "Commentaires sur cette promotion",
   };
 
   const questions = {
-    _of: "Kérdés {1} a {2}-ból: ",
+    _of: "Question {1} sur {2} : ",
     arr: [
       {
         q: "Avez-vous fait des achats sur EGO ?",
         a: [
-          "Igen, vásároltam",
-          "Nem, soha nem vásároltam",
+          "Oui, je l'ai acheté",
+          "Non, jamais acheté",
         ],
       },
       {
-        q: "Honnan értesült erről az ajánlatról?",
-        a: ["A hivatalos weboldalon", "Reklám a Facebookon", "Barátok mondták"],
+        q: "Comment avez-vous entendu parler de l’offre ?",
+        a: ["Sur le site officiel", "Publicité Facebook", "Des amis ont dit"],
       },
       {
-        q: "Miért vásárol fűnyírót?",
-        a: ["Személyes használatra", "Ajándékba"],
+        q: "Pourquoi acheter une tondeuse à gazon ?",
+        a: ["Pour usage personnel", "Pour un cadeau"],
       },
     ],
   };
 
   const check = {
-    title: "A válasza ellenőrzésre kerül...",
+    title: "Votre réponse sera vérifiée...",
     arr: [
-      "Ön válaszolt a 3/3 kérdésre.",
-      "Az IP-címe nem teszi lehetővé, hogy következtetéseket vonjunk le korábbi kéréseiről.",
-      "A válasza ellenőrzésre került.",
+      "Vous avez répondu à la question 3/3.",
+      "Votre adresse IP ne permet pas de tirer des conclusions sur les demandes précédentes.",
+      "Votre réponse a été vérifiée.",
     ],
   };
 
   const modals = {
     welcome: {
       texts: {
-        header: "Gratulálunk, megerősítette, hogy valós személy",
+        header: "Félicitations, vous avez confirmé que vous êtes une personne réelle",
         button: "OK",
         text: `
       <center>
-      Ma, {date}, lehetősége van Nike Air Force 1'07 párt vásárolni speciális áron
+      Aujourd'hui, {date}, vous avez l'opportunité d'acheter une paire de chaussures Nike Air Force 1'07 à un prix spécial
         <br><br>
-        Minden, amit tennie kell, az a megfelelő ajándékdoboz kiválasztása.
+        Tout ce que vous devez faire, c'est choisir la bonne boîte cadeau.
         <br><br>
-        Három próbálkozása van, sok szerencsét!
+        Vous avez 3 essais, bonne chance !
       </center>
       `,
       },
     },
     first: {
       texts: {
-        header: "Ó, ne...",
+        header: "Oh non...",
         button: "OK",
         text: `
       <center>
-      Sajnos ez az ajándék üres! Még 2 próbálkozása van - sok szerencsét!
+      Malheureusement, ce cadeau est vide ! Il vous reste encore 2 essais - bonne chance !
       </center>
       `,
       },
     },
     win: {
       texts: {
-        header: "Gratulálunk! Nyertél!",
+        header: "Félicitations ! Vous avez gagné !",
         button: "OK",
         text: `
       <center>
         <p style="color: #000">
-        Ön nyert egy pár "Nike Air Force 1'07" cipőt
+        Vous avez gagné une paire de chaussures "Nike Air Force 1'07"
         </p>
         <br>
-        1) Kattintson az "OK" gombra, és lépjen a szállítási oldalra.
+        1) Cliquez sur "OK" pour aller à la page de livraison.
         <br><br>
-        2) Töltse ki az űrlapot, és fizesse ki a megrendelést a személyes kedvezményével.
+        2) Remplissez le formulaire et payez la commande en utilisant votre remise personnelle.
         <br><br>
-        3) A csomag 2-3 napon belül megérkezik.
+        3) Le colis sera livré en 2-3 jours.
       </center>
       `,
       },
@@ -213,73 +215,71 @@ const imageBase = (baseUrl ?? landingUrl).replace(/\/index\.html$/, '');
 
   const cartSteps = {
     personal: {
-      title: "Személyes adatok",
+      title: "Informations personnelles",
       fields: {
         name: {
           enabled: true,
-          field: "Név",
+          field: "Prénom",
         },
         family: {
           enabled: true,
-          field: "Vezetéknév",
+          field: "Nom",
         },
         phone: {
           enabled: true,
-          field: "Telefonszám",
+          field: "Numéro de téléphone",
         },
         email: {
           enabled: true,
-          field: "Email cím",
+          field: "Adresse e-mail",
         },
       },
     },
     delivery: {
-      title: "Szállítás",
+      title: "Livraison",
       fields: {
         city: {
           enabled: true,
-          field: "Város",
+          field: "Ville",
         },
         address: {
           enabled: true,
-          field: "Szállítási cím",
+          field: "Adresse de livraison",
         },
         zip: {
           enabled: true,
-          field: "Irányítószám",
+          field: "Code postal",
         },
       },
     },
     payment: {
-      title: "Fizetési módok",
-      creditCard: "Online fizetés hitelkártyával",
+      title: "Méthodes de paiement",
+      creditCard: "Paiement en ligne par carte de crédit",
     },
   };
 
   const cart = {
     steps: cartSteps,
     main: {
-      title: "Rendelési részletek",
-      oldPrice: "123000 Ft",
-      newPrice: "763 Ft",
-      size: "Méret",
+      title: "Détails de la commande",
+      oldPrice: "400,00 €",
+      newPrice: "1,95 €",
+      size: "Taille",
       subTotal: {
-        title: "Részösszeg",
-        amount: "763 Ft",
+        title: "Sous-total",
+        amount: "1,95 €",
       },
       delivery: {
-        title: "Szállítás",
-        amount: "Ft 0.00",
+        title: "Livraison",
+        amount: "0,00 €",
       },
       total: {
-        title: "Összesen",
-        amount: "763 Ft",
+        title: "Total",
+        amount: "1,95 €",
       },
-      checkoutButton: "Rendelés kifizetése",
+      checkoutButton: "Payer votre commande",
     },
   };
-
-
 
   const products = [
     {
